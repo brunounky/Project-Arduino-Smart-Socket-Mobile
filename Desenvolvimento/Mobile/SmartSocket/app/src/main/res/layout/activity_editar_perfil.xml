@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.Activities.a_HomeActivity"
+        android:background="@color/backgroundcolor">
+
+
+
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/colappsingtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp"
+                android:background="@drawable/aaaa"
+                app:title="">
+
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#691a99"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+
+
+                </android.support.v7.widget.Toolbar>
+
+
+
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcfcfc"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        >
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+
+
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/photo_editar"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="1dp"
+                            tools:src="@mipmap/ic_launcher_round"
+                            android:layout_centerHorizontal="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    >
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/nome_editar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="aa"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+
+                    >
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="Email:"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="18sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/emailedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="Novo Email"
+                        android:background="@drawable/styleedittext"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:textColor="#FF574205"
+                    android:id="@+id/editar_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/stylebotton_amarelo"
+                    android:onClick="MudarEmail"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="EDITAR email"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="53dp"
+                        android:text="Senha:"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="18sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/senhaedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:hint="Nova Senha"
+                        android:background="@drawable/styleedittext"
+
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:textColor="#574205"
+                    android:id="@+id/editar_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/stylebotton_amarelo"
+                    android:onClick="MudarSenha"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="EDITAR senha"
+                    android:layout_marginBottom="20dp"/>
+
+
+                <Button
+                    android:textColor="#63160F"
+                    android:id="@+id/excluir_conta"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/stylebotton_vermelho"
+                    android:onClick="ExcluirConta"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Excluir CONTA"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>

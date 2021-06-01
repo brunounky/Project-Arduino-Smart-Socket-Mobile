@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartsocketteste87634257">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass2" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass3" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass4" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass5" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass6" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass7" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass8" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass9" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass10" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass11" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass12" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass13" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass14" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass15" />
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.ReceiverClass16" />
+
+        <receiver android:name=".Activities.Activities.CoisasRotinaRelogio.InicializarBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name=".Activities.Activities.b_PopupAddRotina" />
+        <activity android:name=".Activities.Activities.b_RotinasActivity" />
+        <activity android:name=".Activities.Activities.b_SobreActivity"/>
+
+        <activity android:name=".Activities.Activities.b_PopupAddHub" />
+        <activity android:name=".Activities.Activities.b_PopupAddTomada" />
+        <activity android:name=".Activities.Activities.b_HubActivity" />
+        <activity
+            android:name=".Activities.Activities.b_RecuperarSenhaActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.Activities.a_RegisterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.Activities.Sensor.b_SensorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.Activities.b_Editar_Perfil"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.Activities.b_PopupPerfilUsuarioActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.Activities.a_HomeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activities.Activities.b_Tomadas_do_Hub" />
+        <activity
+            android:name=".Activities.Activities.a_LoginActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

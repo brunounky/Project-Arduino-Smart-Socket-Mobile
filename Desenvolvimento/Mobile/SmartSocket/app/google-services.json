@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371822115683",
+    "firebase_url": "https://smartsocketteste-d1c6f.firebaseio.com",
+    "project_id": "smartsocketteste-d1c6f",
+    "storage_bucket": "smartsocketteste-d1c6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371822115683:android:add438bf345c382a",
+        "android_client_info": {
+          "package_name": "com.example.smartsocketteste87634257"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371822115683-tilulh7ephind0t9c36d28ie3ep1s2fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmnsQ4J0ollYyGethE91tElU9tCVTMguc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371822115683-tilulh7ephind0t9c36d28ie3ep1s2fb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

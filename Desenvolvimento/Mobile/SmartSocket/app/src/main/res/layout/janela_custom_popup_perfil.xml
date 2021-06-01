@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="475dp"
+        android:background="#691a99"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/aaaa"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="310dp"
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/b_shape_redondo_roxo"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="40sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textStyle="bold|italic"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="80dp"
+                    android:id="@+id/foto_perfil"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp"
+                    tools:src="@mipmap/ic_launcher_round"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155dp"
+                        app:contentPaddingTop="15dp"
+                        app:contentPaddingRight="15dp"
+                        app:contentPaddingLeft="15dp"
+                        app:contentPaddingBottom="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nome_perfil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="nome usuario"
+                                android:textStyle="bold"
+                                android:textSize="25sp"
+                                android:layout_marginTop="60dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/email_perfil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email usuario"
+                                android:layout_marginTop="3dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <Button
+                                android:textColor="#574205"
+                                android:id="@+id/btn_editar_perfil"
+                                android:layout_marginTop="30dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Editar Perfil"
+                                android:background="@drawable/stylebotton_amarelo"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center_horizontal" />
+
+
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="62dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_horizontal"
+                            android:weightSum="1">
+
+                            <!--
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="aaaaaaaa"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="bbbbbb"
+                                android:layout_gravity="center_horizontal"/>
+
+                                -->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
